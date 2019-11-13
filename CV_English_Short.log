@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.9.21)  13 NOV 2019 17:43
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.9.21)  13 NOV 2019 18:48
 entering extended mode
 **CV_English_Short.tex
 (CV_English_Short.tex
@@ -1044,17 +1044,17 @@ Overfull \hbox (13.47157pt too wide) in paragraph at lines 273--276
  []
 
 
-Overfull \hbox (20.42226pt too wide) in paragraph at lines 330--335
+Overfull \hbox (46.32692pt too wide) in paragraph at lines 330--336
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
  (CV_English_Short.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 341.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 341.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 342.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
  ) 
 Here is how much of TeX's memory you used:
  24234 strings out of 428755
