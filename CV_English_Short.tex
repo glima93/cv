@@ -15,9 +15,6 @@
 %
 % Important note:
 % This template needs to be compiled with XeLaTeX.
-% The main document font is called Fontin and can be downloaded for free
-% from here: http://www.exljbris.com/fontin.html
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -29,14 +26,12 @@
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Corbel}  % Main document font
-
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \usepackage{fontawesome}
-
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[top=1cm, bottom=1cm, left=2cm, right=2cm]{geometry}	
-%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=3cm]{geometry}	
+%\usepackage{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
@@ -48,12 +43,18 @@
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
 \usepackage[export]{adjustbox}
+
+%%  HEADER
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{}
+\lhead{Curriculum Vitae - Gonçalo Lima}
 %END_FOLD
 
 
 \begin{document}
 
-\pagestyle{empty} % Removes page numbering
+%\pagestyle{empty} % Removes page numbering
 
 \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
@@ -62,9 +63,8 @@
 %----------------------------------------------------------------------------------------
 
 \begin{center}
-	\vspace{2cm} 
 	\huge{Gonçalo Lima} \\
-	\vspace{10pt}
+	\vspace{10pt} 
 	%\hrule height 1pt 
 	\normalsize \href{https://www.google.com/maps/place/Nova+School+of+Business+and+Economics/@38.6800718,-9.3294805,16.58z/data=!4m5!3m4!1s0x0:0x5819eb5424580591!8m2!3d38.6784652!4d-9.3270774}{\faMapMarker} \hspace{5pt} Campus de Carcavelos, Rua da Holanda, n.1, 2775-405 Carcavelos, Portugal \\	\vspace{3pt}
 	\faEnvelopeO \hspace{5pt} \href{mailto:glima93@gmail.com}{glima93@gmail.com} / \href{mailto:goncalo.lima@novasbe.pt}{goncalo.lima@novasbe.pt} \\ 	\vspace{3pt}
@@ -77,13 +77,20 @@
 %%\includegraphics[width=0.2\linewidth, center]{screenshot001}
 %%\photo[70pt][0pt]{screenshot001} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
+\section[Research Interests]{\faSearch \hspace{3pt} Research Interests}
+
+\begin{tabular}{rp{14cm}}
+	& My research interests lie in the intersection between economics of education and public policy. My predoctoral research focuses on applying causal inference methods, including field experiments and quasi-experiments, to evaluate policy or program effectiveness, particularly in the area of education. \\
+	& Other research interests include empirical topics in labor market monopsonies, intergenerational mobility, optimal nudges and strategic network formation.
+\end{tabular}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
 \section[Education]{\faGraduationCap \hspace{3pt} Education}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2017 & \textbf{Masters (MSc) in Economics}, Best student honors \\
 	&  \href{https://iscte-iul.pt/}{ISCTE-IUL}, Lisbon (Portugal) \\
 \end{tabular}
@@ -97,61 +104,54 @@
 %----------------------------------------------------------------------------------------
 \section[Professional Experience]{\faBriefcase \hspace{3pt} Professional Experience}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	- & \textbf{Pre-Doctoral Research Fellow} \\
 	10/2018 & Nova Knowledge Center for the Economics of Education \\  & \href{https://www2.novasbe.unl.pt/en/}{Nova School of Business and Economics}, Lisbon (Portugal) \\ 
-	%	& - Research assistance to the project "\textit{Determinants of school effectiveness: Learning from the Portuguese educational system microdata}" \\
-	%	& - Supervisors: Professors Ana Balcão Reis, Luís Catela Nunes and Maria do Carmo Seabra \\
+		& - Experience with scientific writing, grant writing, large administrative datasets, causal inference methods \\
+		& - Presentations in international academic conferences and policymaker forums \\ 
+		& - Supervisors: Professors Ana Balcão Reis, Luís Catela Nunes and Maria do Carmo Seabra \\
 	
 	
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	09/2018 & \textbf{Consultant} \\
 	03/2018 & \href{http://www.oecd.org/education/ceri/strategic-education-governance.htm}{Strategic Education Governance} \\
 	& Directorate for Education and Skills (EDU), \textbf{OECD}, Paris (France) \\ 
-	%	& - Groundwork for the development of indicators on knowledge governance in decentralized education systems \par
-	%		- Research assistance for peer-learning exercises on on-going educational reforms in OECD countries \par
-	%		- Project dissemination and attendance in academic conferences (UCL Institute of Education, London)
-	
-	
+	& - Groundwork for the development of indicators on knowledge governance in decentralized education systems \\
+	& - Research assistance for peer-learning exercises on on-going educational reforms in OECD countries \\
+	& - Project dissemination and attendance in academic conferences (UCL Institute of Education, London)\\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	03/2018 & \textbf{Consultant} \\
 	09/2016 & \href{http://www.oecd.org/education/school-resources-review/}{School Resources Review} \\ 
 	& Directorate for Education and Skills (EDU), \textbf{OECD}, Paris (France) \\ 
-	%	& - Research assistance, analytical contributions and co-authorship of OECD reports \par
-	%		- Analysis and co-authorship of a country review on the efficient and equitable use of school resources in Portugal \par
-	%		 - Fact-finding and diplomatic missions, including meetings with ministerial authorities, researchers and education stakeholders (Lisbon, Portugal) \par
-	%		- Presentation of OECD-work in conferences with delegations from over 25 countries (Paris, France) \\
-	
-	
+	& - Research assistance, analytical contributions and co-authorship of OECD reports \\
+	& - Analysis and co-authorship of a country review on the efficient and equitable use of school resources in Portugal \\
+	& - Fact-finding and diplomatic missions, including meetings with ministerial authorities, researchers and education stakeholders (Lisbon, Portugal) \\
+	& - Presentation in conferences with experts' delegations from over 25 countries (Paris, France) \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	09/2016 & \textbf{Summer Intern} \\
 	06/2016 & \href{http://www.oecd.org/education/school-resources-review/}{School Resources Review} \\ 
 	& Directorate for Education and Skills (EDU), \textbf{OECD}, Paris (France) \\
-	%	& - Literature review on concepts and measures of efficiency and equity in school education \\
-	
+	& - Literature review on concepts and measures of efficiency and equity in school education \\
 \end{tabular}
-
-
-
 
 %----------------------------------------------------------------------------------------
 % PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section[Research, Working Papers and Publications]{\faBook \hspace{3pt} Research, Working Papers and Publications}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	%2019	& {\textit{Effectiveness of collaboration networks in education: benefits, challenges and governance}}, OECD Working Paper, OECD Publishing, Paris. (forthcoming) \\
 	%	& \\
-	2019 &  {\textit{No country for young kids?: the effects of school starting age throughout childhood and beyond}}, Nova SBE Working Paper, Lisbon. (Co-authors: Miguel Madeira, Ana Balcão Reis, Luís Catela Nunes, Carmo Seabra) \\
+	2019 &  \href{https://glima93.github.io/papers/WKP_AGE.pdf}{\textit{No country for young kids?: the effects of school starting age throughout childhood and beyond}}, Nova SBE Working Paper, Lisbon. (Co-authors: Miguel Madeira, Ana Balcão Reis, Luís Catela Nunes, Carmo Seabra) \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2018 &  "Eficiência na Educação Escolar: um estudo semiparamétrico sobre eficiência escolar em países da OCDE", \href{https://www.ffms.pt/FileDownload/d6e1656d-9dde-45e9-871f-0feb67c7d7f8/as-melhores-teses-de-economia-2018}{{\textit{As Melhores Teses de Economia, 2018}}}, pp.62-69, Fundação Francisco Manuel dos Santos, Lisboa.  \\
 	& \\
 	& \href{http://www.oecd.org/portugal/oecd-reviews-of-school-resources-portugal-2018-9789264308411-en.htm}{\textit{OECD Review of School Resources: Portugal 2018}}, OECD Review of School Resources, OECD Publishing, Paris. (Co-authors: David Liebowitz, Pablo González, Edith Hooge)\\
@@ -163,29 +163,28 @@
 %	& (forthcoming) \textit{Concepts and Measures of Efficiency in School Education}, OECD Education Working Papers, OECD Publishing, Paris.
 %\end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2017 & \href{http://hdl.handle.net/10071/16122}{\textit{Efficiency in School Education: A semi-parametric study of school efficiency in OECD countries}}, Master Dissertation, ISCTE-IUL.\\
 	& \\
 	& OECD, \href{http://www.oecd.org/governance/the-funding-of-school-education-9789264276147-en.htm}{\textit{The Funding of School Education: Connecting Resources and Learning}}, OECD Review of School Resources, OECD Publishing, Paris. (Co-authors: Deborah Nusche, Luka Boeskens, Thomas Radinger, Claire Shewbridge)\\
 \end{tabular}	
 
-\newpage
 
 %----------------------------------------------------------
 % CONFERENCES
 %----------------------------------------------------------------------------------------
 \section[Conferences and Presentations]{\faCommentsO \hspace{3pt} Conferences and Presentations}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2019 & \textbf{49th Education Statistical Forum} (Lisbon, Portugal); \textbf{10th International Workshop on Applied Economics of Education} (Catanzaro, Italy); \textbf{Education Research Symposium} (Oxford, UK); \textbf{13th Annual Meeting of the Portuguese Economic Journal} (Évora, Portugal); \textbf{2019 International Conference on Public Economic Theory} (Strasbourg, France); \textbf{5th Lisbon Research Workshop on Economics, Statistics and Econometrics of Education} (Lisbon, Portugal)  \\
 \end{tabular}
 
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2018 & \textbf{9th Conference on Portuguese Economic Development in the Eurozone}, (Bank of Portugal)
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2017 & \textbf{G200 Youth Forum}, (Dubai, UAE) \\
 	
 \end{tabular}
@@ -195,19 +194,19 @@
 %----------------------------------------------------------------------------------------
 \section[Grants and Awards]{\faEuro \hspace{3pt} Grants and Awards}
 
-\begin{tabular}{r|p{15cm}}
-	2018 & \textbf{Nomination Prize José da Silva Lopes} (Bank of Portugal / Francisco Manuel dos Santos Foundation, FFMS), \textbf{Research Grant Nova SBE/BIM/2018/06} (Science and Technology Foundation, FCT) \\
+\begin{tabular}{r|p{13cm}}
+	2018 & \textbf{Nomination Prize José da Silva Lopes, Top 5 Master Thesis in Economics} (Bank of Portugal / Francisco Manuel dos Santos Foundation, FFMS), \textbf{Research Grant Nova SBE/BIM/2018/06} (Science and Technology Foundation, FCT) \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
+\begin{tabular}{r|p{13cm}}
 	2016 & \textbf{Academic Excellence Award} (ISCTE-IUL), \textbf{TOP Master IBS 16+} (ISCTE-IUL) \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}	
-	2015 & \textbf{Bank of Portugal Professor Jacinto Nunes Prize} (Bank of Portugal), \textbf{Academic Merit Grant} (Ministry of Science, Technology and Higher Education), \textbf{Grant MSc in Economics} (ISCTE-IUL), \textbf{TOP IBS 15+} (ISCTE-IUL) \\
+\begin{tabular}{r|p{13cm}}	
+	2015 & \textbf{Professor Jacinto Nunes Prize for Best BSc in Economics graduates} (Bank of Portugal), \textbf{Academic Merit Grant} (Ministry of Science, Technology and Higher Education), \textbf{Grant MSc in Economics} (ISCTE-IUL), \textbf{TOP IBS 15+} (ISCTE-IUL) \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}		
+\begin{tabular}{r|p{13cm}}		
 	2012 & \textbf{Academic Excellence Award} (ISCTE-IUL), \textbf{TOP IBS 15+} 	(ISCTE-IUL) \\
 \end{tabular}		
 %	2011 & CAE- Certificate in Advanced English 
@@ -232,7 +231,7 @@
 
 \section[Languages]{\faLanguage \hspace{3pt} Languages}
 
-\begin{tabular}{rp{15cm}}
+\begin{tabular}{rp{13cm}}
 	Portuguese (Native), English (Fluent), Spanish (Professional) and French (Conversational)
 	
 \end{tabular}
@@ -254,53 +253,59 @@
 
 \section[Other Activities]{\faCubes \hspace{3pt} Other Activities}
 
-\begin{tabular}{r|p{15cm}}
-	On-going & \textbf{Data Consultant} (\textit{Teresa e Alexandre Soares dos Santos - Iniciativa Educação})
+\begin{tabular}{r|p{13cm}}
+	On-going & \textbf{Data Consultant} (\textit{\href{https://www.iniciativaeducacao.org/en}{Teresa e Alexandre Soares dos Santos - Iniciativa Educação}}) \\
+	& - Data consultancy services for a philanthropic initiative that aims to improve the reading skills of disadvantaged children, facilitate transitions from vocational training to the labor market and divulge credible empirical evidence on education in Portugal
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
-	On-going & \textbf{Data Science Specialization} (John Hopkins University, Coursera)
+\begin{tabular}{r|p{13cm}}
+	On-going & \textbf{Data Science Specialization} (John Hopkins University, Coursera) \\
+	& - A 10-course Coursera online specialization on Data Science. Focus on data analysis using R, Git and Github \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
-	2013-2016 & \textbf{Nova Debate Club} (Nova University)
+\begin{tabular}{r|p{13cm}}
+	2013-2016 & \textbf{Nova Debate Club} (Nova University) \\
+	& - Participant in weekly debates on public policy topics \\
+	& - Debater and judge in national tournaments of competitive debating (British Parliamentary Model) \\
+	& - Assembly Secretary \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
-	2014-2016 & \textbf{ISCTE-IUL Economic Studies} (ISCTE-IUL)
+\begin{tabular}{r|p{13cm}}
+	2014-2016 & \textbf{ISCTE-IUL Economic Studies} (ISCTE-IUL) \\
+	& - Co-organizer of an informal research group devoted to Economics, including economic theory, empirical research and methodological issues \\
+	& - Tutored bachelor students on game theory and networks economics on a series of weekly workshops \\
+	& - Free workshops in Stata, Mathematica, LaTeX and Mendeley \\
 \end{tabular}
 
-\begin{tabular}{r|p{15cm}}
-	2014-2015 & \textbf{Social and Economic Networks: Models and Analysis} (Stanford University, Coursera)
+\begin{tabular}{r|p{13cm}}
+	2014-2015 & \textbf{Social and Economic Networks: Models and Analysis} (Stanford University, Coursera) \\
+	& - 9-week intensive online course on the subject of Social and Economic Networks, by the Santa Fe Institute, Stanford University, in the United States, with Professor Matthew Jackson \\
 \end{tabular}
 
-%\section{Professional Interests}
+\begin{tabular}{r|p{13cm}}
+	2014-2015 & \textbf{Mentor} (ISCTE-IUL) \\
+	& - Helped with the academic integration of 1st year bachelor students, through multiple activities, including volunteering to paint a public school in the suburbs of Lisbon \\
+\end{tabular}
+
+\begin{tabular}{r|p{13cm}}
+	2013-2014 & \textbf{Private tutor (Mathematics)} (Lisbon, Portugal) \\
+	& - Private tutor of 3 high school students \\
+\end{tabular}
+
+
 %
-%\begin{tabular}{rp{13cm}}
-%	 & \textbf{Strategic consultancy}: using data and empirical evidence to provide business and policy recommendations  \\	
-%\end{tabular}
-
-%\section[Research Interests]{\faSearch \hspace{3pt} Research Interests}
-%
-%\begin{tabular}{rp{13cm}}
-%& \textbf{Microeconometric empirical research}: application of identification strategies to harness causality and approach experimental conditions (randomized control trials, instrumental variables, regression discontinuity, difference-in-differences, propensity score matching) \\ 
-%& \textbf{Economics of education}: determinants of effectiveness and efficiency in school  education; determinants of student achievement; impact of human capital acquisition on long-term individual and social outcomes \\
-%& \textbf{Other research interests}: labour economics, strategic network formation, limited rationality in economic decision-making \\
-%
-%\end{tabular}
-%
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%%	REFERENCES
+%%----------------------------------------------------------------------------------------
 %\section[References]{\faGroup \hspace{3pt} References}
-%\begin{tabular}{r|p{15cm}}
-%	& \textbf{Ana Balcão Reis} \\
-%	& Associate Professor \\
-%	& Nova School of Business and Economics, Portugal \\
-%	& \href{mailto: ana.balcao.reis@novasbe.pt}{ana.balcao.reis@novasbe.pt}   
-%\end{tabular}
+%%\begin{tabular}{r|p{13cm}}
+%%	& \textbf{Ana Balcão Reis} \\
+%%	& Associate Professor \\
+%%	& Nova School of Business and Economics, Portugal \\
+%%	& \href{mailto: ana.balcao.reis@novasbe.pt}{ana.balcao.reis@novasbe.pt}   
+%%\end{tabular}
 %
-%\begin{tabular}{r|p{15cm}}
+%\begin{tabular}{r|p{13cm}}
 %	& \textbf{Luís Catela Nunes} \\
 %	& Professor  \\
 %	& Nova School of Business and Economics, Portugal \\
@@ -308,7 +313,7 @@
 %	& \href{mailto:lcnunes@novasbe.pt}{lcnunes@novasbe.pt} 
 %\end{tabular}
 %
-%\begin{tabular}{r|p{15cm}}
+%\begin{tabular}{r|p{13cm}}
 %	& \textbf{David Liebowitz} \\
 %	& Assistant Professor \\
 %	& Educational Methodology, Policy and Leadership \\
@@ -316,21 +321,22 @@
 %	& \href{mailto:daviddl@uoregon.edu}{daviddl@uoregon.edu}  
 %\end{tabular}
 %
-%\begin{tabular}{r|p{15cm}}
+%\begin{tabular}{r|p{13cm}}
 %	& \textbf{Henrique Monteiro} \\
 %	& Associate Professor \\
 %	& Director of the MSc in Economics \\
 %	& ISCTE-IUL, Portugal \\
 %	& \href{mailto:henrique.monteiro@iscte-iul.pt}{henrique.monteiro@iscte-iul.pt}   
 %\end{tabular}
-
+%
 
 \section[Other Information]{\faInfoCircle \hspace{3pt} Other Information}
 
-\begin{tabular}{rp{15cm}}
+\begin{tabular}{rp{13	cm}}
 	Full name: & Gonçalo da Silva Lima \\
 	Birthday: & 20 November 1993 \\
 	Nationality: & Portuguese	\\
+	Hobbies: & Travel, reading, playing basketball, listening to music \\
 	Personal website: & \href{https://sites.google.com/view/goncalo-lima/home}{https://sites.google.com/view/goncalo-lima/home} \\
 \end{tabular}
 
